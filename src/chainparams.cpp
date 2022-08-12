@@ -572,6 +572,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nPeriod = 128; // test ability to change from default
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nThreshold = 128;
+        consensus.simplicity_enabled = true;
 
         consensus.nMinimumChainWork = uint256{};
         consensus.defaultAssumeValid = uint256{};
